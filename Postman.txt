@@ -8,4 +8,8 @@ Understanding Postman UI(User Interface)
 2. Different sections in postman UI
 3. Header, Sidebar and builder
 
+Creating the first API request and Running in Postman
 
+1. Creating the request
+2. Run the request
+3. Analyse the response
