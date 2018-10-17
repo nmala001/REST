@@ -27,3 +27,28 @@ Running a Collection:
 
 1. How to run a collection
 2. How to analyse the results
+
+Variables:
+
+1. What are variables in postman
+2. Why to use variables
+3. how to create variables
+4. How to refer variables
+
+What:
+
+variables - elements(data store that can take in different values)
+
+Why:
+
+1. To reuse values at multiple places
+2. Avoid any repetition caused
+3. To avoid re work when the value changes
+
+
+
+
+
+
+
+
