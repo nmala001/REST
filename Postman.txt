@@ -71,6 +71,10 @@ Creating An Environment:
 
 4. How to delete an environment.
 
+Creating quick scripts using snippets:
+
+
+
 
 
 
