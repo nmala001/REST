@@ -73,6 +73,21 @@ Creating An Environment:
 
 Creating quick scripts using snippets:
 
+Adding the SOAP in Postman:
+
+How to add the SOAP requests in Postman?
+
+step1: Get Soap request URL or a WSDL url and add to the request url.
+
+step2: Set the method as POST
+
+step3: Go to body section and click on raw and content-type to text/xml
+
+Note: SOAP UI can be used to parse the wsdl document or the wsdl url
+
+step4: Provide request data in body
+
+step5: Run and Validate
 
 
 
