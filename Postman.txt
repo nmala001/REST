@@ -1,3 +1,11 @@
 Introduction to postman:
 
 1. Develop, document, test and share APIs
+
+Understanding Postman UI(User Interface)
+
+1. About Postman UI
+2. Different sections in postman UI
+3. Header, Sidebar and builder
+
+
