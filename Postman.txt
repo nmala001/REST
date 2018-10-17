@@ -13,3 +13,8 @@ Creating the first API request and Running in Postman
 1. Creating the request
 2. Run the request
 3. Analyse the response
+
+Collections in Postman
+
+1. What is a Collection
+2. Creating and managing collections in Postman
