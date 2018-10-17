@@ -18,3 +18,7 @@ Collections in Postman
 
 1. What is a Collection
 2. Creating and managing collections in Postman
+
+Collection is a group of API requests
+These can be stored and saved in the logical arrangement.
+Forms the basis for advanced operation in postman.
