@@ -46,6 +46,11 @@ Why:
 3. To avoid re work when the value changes
 
 
+Setting and Getting Variables through Scripts
+
+1. How to get variables through scripts
+2. How to set variables through scripts
+
 
 
 
