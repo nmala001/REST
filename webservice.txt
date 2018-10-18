@@ -1,0 +1,5 @@
+In order to run any web service we need to have our server running
+
+Server Used: Apache Tomcat
+REST API: JAX RS
+
