@@ -3,3 +3,10 @@ In order to run any web service we need to have our server running
 Server Used: Apache Tomcat
 REST API: JAX RS
 
+Softwares Required:
+
+1. Postman rest client
+2. SOAP UI
+3. Tomcat server
+4. Jenkins
+5. Maven(Build Management utility)
