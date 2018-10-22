@@ -1,3 +1,12 @@
 @QueryParam:
 It works very similar to the @PathParam parameter
 
+Param Annotations:
+
+1. Accessing Header Param = @HeaderParam
+2. Accessing Matrix Param  = @MatrixParam
+3. Accessing Cookie values  = @CookieParam
+
+The above annotations are in addition to the @PathParam and @QueryParam annotations
+
+
