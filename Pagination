@@ -1,0 +1,3 @@
+@QueryParam:
+It works very similar to the @PathParam parameter
+
