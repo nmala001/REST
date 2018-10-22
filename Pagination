@@ -11,4 +11,4 @@ The above annotations are in addition to the @PathParam and @QueryParam annotati
 
 4. Accessing Form Values = @FormParam
 
-
+By using the @Context Param you can access the UriInfo and also the HTTPHeader information
