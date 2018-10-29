@@ -1,0 +1,22 @@
+Alternative way of bootstrapping a JAX-RS Application:
+
+moxy:
+The framework to convert from java instances to the JSON instances
+-> We have added moxy which converts the java instances to JSON.
+-> Changed the build configuration from java 5 to java 7
+
+-> All the jersey dependencies and moxy dependencies have been added to Pom.xml file
+-> Throw in properties for jersey version and encoding
+
+
+Adding Java classes:
+
+-> Will be adding classes in src/main/java
+
+Singleton:
+
+to make a resource singleton, annotate it with @singleton
+
+-> if we make multiple requests it is held on to the same request of a class.
+
+
