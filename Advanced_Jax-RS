@@ -19,4 +19,10 @@ to make a resource singleton, annotate it with @singleton
 
 -> if we make multiple requests it is held on to the same request of a class.
 
+Singleton resources vs per request resources:
+
+per request life cycle is a default life cycle whereas singleton scope holds on to the instance.
+
+
+
 
