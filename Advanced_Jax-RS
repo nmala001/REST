@@ -48,6 +48,17 @@ Best Practices for building client side code:
 -> Create a web target object which is a base target.
 -> Take the base target and add on the rest of the path to it.
 
+Rest Authentication:
+
+Implementing Filters in Jax-RS:
+
+1. Request Filter
+2. Response Filter
+
+
+
+
+
 
 
 
