@@ -31,3 +31,17 @@ The {PathParam} lets you map the resource with the variable path pattern
 -> It is better to annotate the member variables with @pathParam and @queryParam rather than method arguments as the whole class can access 
 it rather than just one method.
 
+@Provider annotations to create the custom providers
+
+Message Body Readers and Message Body Writers:
+
+Message Body : Dealing with the content of the message in the request body and the response body
+
+Every Message Body writer has to implement the interface of Message body writer.
+
+Every Message Body Reader has to implement the interface of Message body Reader.
+
+The servlet container has to be restarted every time we use the @provider annotation
+
+
+
