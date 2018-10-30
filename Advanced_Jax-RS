@@ -24,5 +24,10 @@ Singleton resources vs per request resources:
 per request life cycle is a default life cycle whereas singleton scope holds on to the instance.
 
 
+Param Annotations and member variables:
 
+The {PathParam} lets you map the resource with the variable path pattern
+-> both the method arguments and the member variables can be annotated using the queryParam and pathParam parameters.
+-> It is better to annotate the member variables with @pathParam and @queryParam rather than method arguments as the whole class can access 
+it rather than just one method.
 
