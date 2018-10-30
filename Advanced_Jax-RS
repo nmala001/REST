@@ -48,12 +48,83 @@ Best Practices for building client side code:
 -> Create a web target object which is a base target.
 -> Take the base target and add on the rest of the path to it.
 
-Rest Authentication:
+
 
 Implementing Filters in Jax-RS:
 
 1. Request Filter
 2. Response Filter
+
+Methods for Rest API Authentication:
+
+1. Classic session based authentication:
+
+->The client makes the authentication request to the server.
+-> Server creates an object in the memory called as session created on the server.
+-> The session has some kind of an ID or a token.
+-> The server sends back the session token to the client
+-> The client needs to hold on to the session token.
+->The next time when the client talks to the server, it needs to send this token back
+-> The server typically sends the token back as a cookie.Hence the client has that value in the cookie.
+->Next time when client makes a request to the server, the session token in the cookie is sent to the server.
+-> When the client ends the process and logs out the session is destroyed by the server.
+-> Even though this is nice and simple, it will be a problem for the rest APIs because REST APIs are stateless.
+
+
+2. REST API Authentication
+
+Stateless: The applications running on the server does not maintain any state. Means it does not maintain information that persists across 
+multiple requests.
+-> There is no state that is maintained or there is no information that is persisted.
+->It does not remember the previous interaction between the client and the server.
+->Session based authentication does not work any more in this scenario.
+
+Basic Auth:
+
+-> First time from the client, to authenticate username and password pairs are sent to the server.
+-> Everytime a request is made, a user name and password pair has to be sent to the server.
+
+Steps involved to send the username and password from the client side:
+1. Take username:password
+2. Do a base 64 encoding.
+3. After doing that, we will get an encoded string.
+4. Take the encoded sring and in the header create a new key called as authorization.
+5. Authorization value : Bearer {encoded string}
+
+Steps involved to send the username and password from the Server side:
+
+1. The server side its the exact opposite.
+2. The server gets this request and examines the authorization request
+3. The server check for the first part of the string Bearer and second part which is the encoded string 
+4. These string are then decoded on the server side.
+5. the encoded strings are not secure as anybody has an access to this encoded string
+6. This request should always be sent over in https method so that people cannot look at the method and examine the value.
+7. When base 64 encoding is used its the childs play to get the user name and password out of it.
+
+Reason for encoding: 
+
+-> To encode the non http compatible characters that may be either in the user name and password(This is not for security and we dont wanna hide this).
+-> Though we do not know the username and password, it is one step away from getting the user name and password.
+
+Advantages: 
+1. simple and does runs on a stateless server
+2. supported by all the browsers.
+
+Disadvantages:
+1. Requires HTTPS
+2. Subject to replay attacks.
+3. Logout is tricky for this scenario.
+
+Better solutions:
+
+1. Digest access authentication
+2. Asymmetric cryptography
+3. OAuth is the other solution
+4. JSON Web tokens
+
+
+
+
 
 
 
