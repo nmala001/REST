@@ -43,5 +43,11 @@ Every Message Body Reader has to implement the interface of Message body Reader.
 
 The servlet container has to be restarted every time we use the @provider annotation
 
+Best Practices for building client side code:
+
+-> Create a web target object which is a base target.
+-> Take the base target and add on the rest of the path to it.
+
+
 
 
