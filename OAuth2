@@ -1,3 +1,20 @@
 Securing the Restful APIs using OAuth 2.0:
 
-->
+-> Jersey provides reference implementation for JAX-RS.
+-> JAX-RS, OAUTH, and Demo
+
+Version - v1
+Context - cwm-rest-services
+Invocation URL - https://apigateway.test.bnymellon.com/cwm-rest-services/v1
+
+
+Allows multiple user requests
+
+Credentials:
+
+sandbox:
+
+client ID: sX4Qfg__Q7woC9bz1u0HNag8QGYa
+Consumer secret: RpF0Pa8uw9a7YsLLp99PMKRdg7ka
+
+
