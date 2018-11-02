@@ -1,0 +1,35 @@
+Steps to install curl in windows
+
+Install cURL on Windows
+
+There are 4 steps to follow to get cURL installed on Windows.
+
+Step 1 and Step 2 is to install SSL library. Step 3 is to install cURL. Step 4 is to install a recent certificate
+
+Step One: Install Visual C++ 2008 Redistributables
+
+From https://www.microsoft.com/en-za/download/details.aspx?id=29 For 64bit systems Visual C++ 2008 Redistributables (x64) For 32bit systems Visual C++ 2008 Redistributables (x32)
+
+Step Two: Install Win(32/64) OpenSSL v1.0.0k Light
+
+From http://www.shininglightpro.com/products/Win32OpenSSL.html For 64bit systems Win64 OpenSSL v1.0.0k Light For 32bit systems Win32 OpenSSL v1.0.0k Light
+
+Step Three: Install cURL
+
+Depending on if your system is 32 or 64 bit, download the corresponding** curl.exe.** For example, go to the Win64 - Generic section and download the Win64 binary with SSL support (the one where SSL is not crossed out). Visit http://curl.haxx.se/download.html More specific Link: http://curl.haxx.se/latest.cgi?curl=win64-ssl-sspi
+
+Copy curl.exe to C:\Windows\System32
+
+Step Four: Install Recent Certificates
+
+Do not skip this step. Download a recent copy of valid CERT files from https://curl.haxx.se/ca/cacert.pem Copy it to the same folder as you placed curl.exe (C:\Windows\System32) and rename it as curl-ca-bundle.crt
+
+If you have already installed curl or after doing the above steps, add the directory where it's installed to the windows path:
+
+1 - From the Desktop, right-click My Computer and click Properties.
+2 - Click Advanced System Settings .
+3 - In the System Properties window click the Environment Variables button.
+4 - Select Path and click Edit.
+5 - Append ;c:\path to curl directory at the end.
+5 - Click OK.
+6 - Close and re-open the command prompt
