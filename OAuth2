@@ -61,6 +61,6 @@ Client Side:
 -> Make Authenticated requests(ClientRequestFilters, ClientResponseFilters)
 Server Side:
 -> Authorization flow: JAX-RS Resources
--> Authenticated requests: ContainerRequestFilterss
+-> Authenticated requests: ContainerRequestFilters
 
 
